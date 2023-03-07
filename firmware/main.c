@@ -1,5 +1,4 @@
-#include "MS51_16K.H"
-#include "globals.h"
+#include "global.h"
 
 uint8_t heaterState = 0, lastState = 0;
 

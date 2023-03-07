@@ -1,6 +1,4 @@
 #include "lcd.h"
-#include "delay_soft.h"
-#include "globals.h"
 
 /************ Define MS51 pins for display **********/
 /*

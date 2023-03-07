@@ -387,19 +387,14 @@
           <GroupName>Include</GroupName>
           <Files>
             <File>
-              <FileName>delay_soft.h</FileName>
+              <FileName>global.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\delay_soft.h</FilePath>
+              <FilePath>..\global.h</FilePath>
             </File>
             <File>
               <FileName>lcd.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\lcd.h</FilePath>
-            </File>
-            <File>
-              <FileName>globals.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\globals.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -422,9 +417,9 @@
               <FilePath>D:\MS51\MS51FB\Library\StdDriver\src\delay.c</FilePath>
             </File>
             <File>
-              <FileName>delay_soft.c</FileName>
+              <FileName>global.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\delay_soft.c</FilePath>
+              <FilePath>..\global.c</FilePath>
             </File>
             <File>
               <FileName>lcd.c</FileName>

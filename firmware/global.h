@@ -3,8 +3,11 @@
 
 #include "MS51_16K.H"
 #include "delay.h"
-#include "delay_soft.h"
 #include "lcd.h"
+
+// Soft Delay 
+#define osc_freq_in_MHz 16
+#define osc_scalar (24 / osc_freq_in_MHz)
 
 // LCD
 #define RS_PIN  P04
@@ -31,6 +34,7 @@
 #define SPI_SCK P10
 #define SPI_CSL P11
 
+// PinMode
 #define GPIO_init() do{\
 	  P04_PUSHPULL_MODE; \
     P03_PUSHPULL_MODE; \
@@ -44,6 +48,9 @@
     P16_INPUT_MODE; \
     P17_QUASI_MODE; \
     P30_PUSHPULL_MODE; \
-    } while(0);
+    } while(0)
 
+void delay_us(unsigned int value);
+void delay_ms(unsigned int value);
+		
 #endif

@@ -1,6 +1,6 @@
 #ifndef LiquidCrystal_H
 #define LiquidCrystal_H
-#include "MS51_16K.H"
+#include "global.h"
 
 // commands
 #define LCD_CLEARDISPLAY 0x01
