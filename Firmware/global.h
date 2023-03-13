@@ -5,6 +5,18 @@
 #include "delay.h"
 #include "lcd.h"
 
+// Retry interval
+#define LCD_NRL_DPY_INT 10*1000 // 0.5 Min
+//#define LCD_NRL_DPY_INT 1*60*1000 // 1 Min
+
+// CountDown Timer
+#define ONHRS 0
+#define ONMIN 1
+#define ONSEC 0
+
+// Timer 1
+#define DIV12_1ms TIMER_DIV12_VALUE_1ms_FOSC_16000000
+
 // Soft Delay 
 #define osc_freq_in_MHz 16
 #define osc_scalar (24 / osc_freq_in_MHz)
@@ -36,7 +48,7 @@
 
 // PinMode
 #define GPIO_init() do{\
-	  P04_PUSHPULL_MODE; \
+	P04_PUSHPULL_MODE; \
     P03_PUSHPULL_MODE; \
     P02_PUSHPULL_MODE; \
     P12_PUSHPULL_MODE; \
@@ -50,7 +62,7 @@
     P30_PUSHPULL_MODE; \
     } while(0)
 
-void delay_us(unsigned int value);
-void delay_ms(unsigned int value);
-		
+void delay_us(uint32_t value);
+void delay_ms(uint32_t value);
+
 #endif
