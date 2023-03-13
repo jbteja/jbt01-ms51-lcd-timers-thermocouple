@@ -5,14 +5,13 @@
 #include "delay.h"
 #include "lcd.h"
 
-// Retry interval
-#define LCD_NRL_DPY_INT 10*1000 // 0.5 Min
-//#define LCD_NRL_DPY_INT 1*60*1000 // 1 Min
-
 // CountDown Timer
 #define ONHRS 0
-#define ONMIN 1
+#define ONMIN 15
 #define ONSEC 0
+
+// Retry interval
+#define LCD_NRL_DPY_INT 10*1000 // 10 Sec
 
 // Timer 1
 #define DIV12_1ms TIMER_DIV12_VALUE_1ms_FOSC_16000000
@@ -64,5 +63,12 @@
 
 void delay_us(uint32_t value);
 void delay_ms(uint32_t value);
+
+void set_timer0_tl_th(uint16_t value);
+void start_timer0_mode1(uint16_t value);
+void stop_timer0_mode1(void);
+void set_timer1_tl_th(uint16_t value);
+
+void display_char(uint8_t x_pos, uint8_t y_pos, uint8_t value);
 
 #endif

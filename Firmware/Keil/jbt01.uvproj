@@ -168,7 +168,7 @@
         </DebugOption>
         <Utilities>
           <Flash1>
-            <UseTargetDll>0</UseTargetDll>
+            <UseTargetDll>1</UseTargetDll>
             <UseExternalTool>0</UseExternalTool>
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>0</UpdateFlashBeforeDebugging>
@@ -324,7 +324,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>D:\MS51\MS51FB\Library\Device\Include;D:\MS51\MS51FB\Library\StdDriver\inc;..\..\firmware</IncludePath>
+              <IncludePath>D:\MS51\MS51FB\Library\Device\Include;D:\MS51\MS51FB\Library\StdDriver\inc;..\..\Firmware</IncludePath>
             </VariousControls>
           </C51>
           <Ax51>
