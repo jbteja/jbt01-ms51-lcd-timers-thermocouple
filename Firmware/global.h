@@ -14,7 +14,7 @@
 #define LCD_NRL_DPY_INT 10*1000 // 10 Sec
 
 // Timer 1
-#define DIV12_1ms TIMER_DIV12_VALUE_1ms_FOSC_16000000+27
+#define DIV12_1ms TIMER_DIV12_VALUE_1ms_FOSC_16000000+26
 
 // Soft Delay 
 #define osc_freq_in_MHz 16
