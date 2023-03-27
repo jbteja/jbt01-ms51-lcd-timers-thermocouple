@@ -10,10 +10,11 @@ const char allStringsDpy[][17] = {
     "Pres Red 33 Stop\0" 
 };
 
+uint8_t tempStr[8] = {'\0'};
 uint8_t heaterState = 0, lastState = 0;
 uint8_t toggle = 1, lastToggle = 0, dpy = 0;
 int8_t sec = 0, min = 0, hrs = 0, lastSec = -1;
-uint32_t millies = 0, cmilles = 0, pmillies = 0, ms = 0;
+uint32_t millies = 0, pmillies = 0, ms = 0;
 uint8_t arySize = sizeof(allStringsDpy) / sizeof(allStringsDpy[0]);
 
 /* Liquid crystal display state functions */
@@ -34,7 +35,17 @@ void display_off_state(void){
 }
 
 void display_execution_state(void) {
+    float tr = 0.00;
+    uint8_t ittr, samples = 3;
+
     if (sec != lastSec) {
+        //Max6675 in Degs 
+        for (ittr = 0; ittr < samples; ittr++) {
+            tr += Max6675_readCelsius();
+            delay_ms(10);
+        }
+        tr = tr/samples;
+
         LiquidCrystal_setCursor(0, 0);
         LiquidCrystal_putStr("Time ->");
         display_char(8, 0, hrs);
@@ -43,13 +54,23 @@ void display_execution_state(void) {
         
         LiquidCrystal_setCursor(0, 1);
         LiquidCrystal_putStr("Temp ->");
-        LiquidCrystal_setCursor(8,1);
-        LiquidCrystal_putStr("30.06");
-        LiquidCrystal_setCursor(14, 1);
-        LiquidCrystal_putChar(0xDF);
-        LiquidCrystal_putChar('C');
+        LiquidCrystal_setCursor(8, 1);
+        
+        if (tr == 0.00) {
+            LiquidCrystal_putStr(" Error! ");
+        } else {
+            float_to_str(tr, 2, tempStr);
+            LiquidCrystal_putStr("      ");
+            LiquidCrystal_setCursor(8, 1);
+            LiquidCrystal_putStr(tempStr);
+            LiquidCrystal_setCursor(14, 1);
+            LiquidCrystal_putChar(0xDF);
+            LiquidCrystal_putChar('C');
+        }
+
         lastSec = sec;
     }
+
     //For clock effect
     if (toggle != lastToggle) {
         if(toggle) {
@@ -160,6 +181,8 @@ void Timer1_ISR (void) interrupt 3 {
 /* Initial SetUp */
 void setup(void) {
 	GPIO_init();
+	MAX6675_GPIO_init();
+    Max6675_SPI_init();
 
     //Timer 0
     start_timer0_mode1(DIV12_1ms);

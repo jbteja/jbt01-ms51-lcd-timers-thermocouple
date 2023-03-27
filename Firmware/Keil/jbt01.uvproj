@@ -396,6 +396,11 @@
               <FileType>5</FileType>
               <FilePath>..\lcd.h</FilePath>
             </File>
+            <File>
+              <FileName>max6675.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\max6675.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -412,11 +417,6 @@
               <FilePath>D:\MS51\MS51FB\Library\StdDriver\src\common.c</FilePath>
             </File>
             <File>
-              <FileName>delay.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>D:\MS51\MS51FB\Library\StdDriver\src\delay.c</FilePath>
-            </File>
-            <File>
               <FileName>global.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\global.c</FilePath>
@@ -425,6 +425,16 @@
               <FileName>lcd.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>D:\MS51\MS51FB\Library\StdDriver\src\spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>max6675.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\max6675.c</FilePath>
             </File>
             <File>
               <FileName>main.c</FileName>
