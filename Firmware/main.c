@@ -43,7 +43,6 @@ void display_execution_state(void) {
         for (ittr = 0; ittr < samples; ittr++) {
             tr += Max6675_readCelsius();
             delay_ms(10);
-
             if (tr == 0.00) {
                 break;
             }
@@ -226,12 +225,15 @@ void main(void) {
         display_off_state();
         heater_off();
         lastState = LOW;
+
     } else if ((heaterState == LOW) && (SW_SART == LOW)) {
         display_on_state();
         heater_on();
         lastState = HIGH;
+
     } else if ((heaterState == HIGH) && (lastState == HIGH)) {
         heater_auto_cutoff();
+
     } else {
         if ((millies - pmillies) >= LCD_NRL_DPY_INT) {
             (dpy < (arySize - 2)) ? (dpy += 2) : (dpy = 0);
