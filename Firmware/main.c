@@ -43,6 +43,10 @@ void display_execution_state(void) {
         for (ittr = 0; ittr < samples; ittr++) {
             tr += Max6675_readCelsius();
             delay_ms(10);
+
+            if (tr == 0.00) {
+                break;
+            }
         }
         tr = tr/samples;
 

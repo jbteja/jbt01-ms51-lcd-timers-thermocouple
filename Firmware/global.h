@@ -76,7 +76,7 @@ void start_timer0_mode1(uint16_t value);
 void stop_timer0_mode1(void);
 void set_timer1_tl_th(uint16_t value);
 
-uint8_t count_digits(uint8_t digt);
+uint8_t count_digits(uint32_t digt);
 void float_to_str(float x, uint8_t decimalPoint, uint8_t *outStr);
 
 void display_char(uint8_t x_pos, uint8_t y_pos, uint8_t value);

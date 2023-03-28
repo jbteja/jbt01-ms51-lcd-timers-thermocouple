@@ -43,7 +43,7 @@ void set_timer1_tl_th(uint16_t value) {
 }
 
 /* To convert int, float to string for display */
-uint8_t count_digits(uint8_t digt) {
+uint8_t count_digits(uint32_t digt) {
     uint8_t count = 0;
     while(digt != 0) {
         digt = digt/10;
@@ -53,7 +53,7 @@ uint8_t count_digits(uint8_t digt) {
 }
 
 void float_to_str(float x, uint8_t decimalPoint, uint8_t *outStr) {
-    uint16_t units, decimals, i = 0, mul = 1;
+    uint32_t units, decimals, i = 0, mul = 1;
     while(i++ < decimalPoint) {
         mul *= 10;
     }

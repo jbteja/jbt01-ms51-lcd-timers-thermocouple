@@ -15,7 +15,7 @@ void Max6675_SPI_init(void) {
     set_SPCR_SPR1;
     clr_SPCR_SPR0;
 	
-	/* /SS General purpose I/O ( No Mode Fault ) */
+    /* /SS General purpose I/O ( No Mode Fault ) */
     set_SPSR_DISMODF;
     clr_SPCR_SSOE;
 
@@ -101,7 +101,7 @@ uint8_t Max6675_getADC(uint16_t *ADC_data) {
 }
 */
 float Max6675_readCelsius(void) {
-	uint16_t tvalue;
+	uint16_t tvalue = 0;
 	
 	MAX6675_CS = 0;
 	delay_us(10);
@@ -118,7 +118,6 @@ float Max6675_readCelsius(void) {
 	}
 	
 	tvalue >>= 3;
-	display_uint(0, 0, tvalue);
 	return ((float)tvalue) * 0.25;
 }
 
