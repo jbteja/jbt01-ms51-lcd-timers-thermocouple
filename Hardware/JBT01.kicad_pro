@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 2.1,
-          "height": 3.11404,
-          "width": 3.11404
+          "drill": 1.1,
+          "height": 1.8,
+          "width": 1.8
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -120,7 +120,7 @@
       },
       "track_widths": [
         0.0,
-        0.254,
+        0.3048,
         0.381,
         0.4572,
         0.508,
@@ -390,8 +390,6 @@
         "nets": [
           "Net-(C1-Pad1)",
           "Net-(C1-Pad2)",
-          "Net-(FL1-Pad2)",
-          "Net-(FL1-Pad4)",
           "Net-(J3-Pad1)",
           "unconnected-(K1-Pad1)",
           "unconnected-(K1-Pad5)",
@@ -416,7 +414,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "JBT01B.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
