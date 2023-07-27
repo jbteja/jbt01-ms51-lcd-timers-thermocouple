@@ -21,6 +21,7 @@ void Max6675_SPI_init(void) {
 
     /* SPI in Master mode */
     set_SPCR_MSTR;
+	//SPICLK_FSYS_DIV16;
 
     /* MSB first */
     clr_SPCR_LSBFE;
@@ -30,6 +31,7 @@ void Max6675_SPI_init(void) {
     
     /* Enable SPI function */
     set_SPCR_SPIEN;
+	//clr_SPSR_SPIF;
 }
 
 /*

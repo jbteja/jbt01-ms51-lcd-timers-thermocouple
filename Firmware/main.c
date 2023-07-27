@@ -2,12 +2,12 @@
 
 const char allStringsDpy[][17] = {
   //"1234567890123456\0"
-    "AAAAAAAAAAAAAAAA\0", 
-    "BBBBBBBBBBBBBBBB\0",
-    "CCCCCCCCCCCCCCCC\0", 
-    "DDDDDDDDDDDDDDDD\0",
-    " Green 33 Start \0", 
-    "Pres Red 33 Stop\0" 
+    "    Hygienic    \0",
+    "    Disposal    \0",
+    "   Drop Only    \0",
+    "  Used Napkins  \0",
+    "Pres Red to Stop\0",
+    " Green to Start \0" 
 };
 
 uint8_t tempStr[8] = {'\0'};

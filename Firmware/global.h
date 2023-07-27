@@ -30,8 +30,8 @@
 #define DB7_PIN P14
 
 // LED
-#define LED_RED P07
-#define LED_GRN P06
+#define LED_RED P06
+#define LED_GRN P07
 
 // Buttons
 #define SW_SART P05
