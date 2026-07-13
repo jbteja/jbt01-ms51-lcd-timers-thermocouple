@@ -3,14 +3,15 @@
 | Property          | Value                                            |
 |-------------------|--------------------------------------------------|
 | Project ID        | tj01 (Previously JBT01)                          |
-| Started           | 14th February 2023                               |
+| Project Type      | Freelance/Client Project                         |
+| Initiated On      | 14th February 2023                               |
 | Stack             | C, Keil uVision, KiCAD 6.0.0, Nuvoton MCUs       |
-| Keywords          | MS51FB9AE, MAX6675, K-Type Thermocouple, T91-30A,<br>110/230V AC to 12V DC SMPS, LCD Display, Timer 2 |
-| Status            | Completed and delivered to the client.           |
+| Keywords          | MS51FB9AE, MAX6675, K-Type Thermocouple, T91-30A,<br>110/230V AC to 12V DC SMPS, Display, Timer Interrupts,<br>State Machine, PCB Design, Firmware, Field Deployment |
+| Status            | Completed and delivered to the client :)         |
 
 ## 🚀 Overview
 
-A heater controller project built around the Nuvoton MS51FB9AE. It delivers deterministic operation, safety auto-cutoff, preset timer modes, and temperature measurement using a K‑type thermocouple rated above 750°C.
+A freelance heater controller project built around the Nuvoton MS51FB9AE. It delivers deterministic operation, safety auto-cutoff, preset timer modes, and temperature measurement using a K‑type thermocouple rated above 750°C.
 
 The custom PCB includes a 16×2 LCD, MAX6675 thermocouple interface, a few switches, and a relay for heater control. The design prioritizes temperature safety and reliable performance in a demanding environment.
 
@@ -18,7 +19,7 @@ The custom PCB includes a 16×2 LCD, MAX6675 thermocouple interface, a few switc
 
 This device is intended for a medical/sanitary incinerator where the internal chamber exceeds 750°C. The electronics were designed to operate reliably under harsh conditions and maintain stable performance for at least two years.
 
-The initial order was for 100 units, with 6 controller boards to be delivered within 90 days.
+The initial order was for 100 units, with 6 sample boards to be delivered within 90 days.
 
 Scope included requirements gathering, controller design, PCB and firmware development, mechanical integration support, and field testing to validate reliability.
 
@@ -161,7 +162,7 @@ The device was developed through integrated mechanical and electronic design to 
 
 ## 📌 Conclusion & Current Status
 
-The project requirements were successfully met and delivered within the specified timeline, with 20 controller units delivered and deployed in the field. Although an initial requirement of 100 units was anticipated, the full order was not fulfilled by the client. However, the delivered controllers have been operating reliably, meeting the requirement of stable performance for at least two years. The project has been a valuable learning experience in embedded system design, hardware-software co-design, and project management.
+The project requirements were successfully met and delivered within the specified timeline, with 20 controller units delivered and deployed in the field. Although an initial requirement of 100 units was anticipated, the full order was not fulfilled by the client. However, the delivered controllers have been operating reliably, meeting the requirement of stable performance for at least two years. The project has been a valuable learning experience in field deployment, hardware-software co-design, and project coordination.
 
 **Of the controller boards delivered, all except one remain functional and in good operating condition after nearly two years of field deployment**. The single failure was due to a surge in the power supply, which bricked the SMPS unit.
 
