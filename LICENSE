@@ -1,10 +1,21 @@
-Copyright (c) 2023 Bhanu Teja (jbteja). All Rights Reserved.
+Copyright (c) 2023 Bhanu Teja (jbteja).
 
-This source code and its design are the exclusive property of the author.
+This project, including its source code, hardware design files, and
+associated documentation (collectively, the "Project"), is the exclusive
+property of the author.
 
-Permission is hereby granted strictly to view, download, and study this codebase for the purposes of educational review, portfolio evaluation, and peer assessment.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the Project, to view, download, and study it solely for the purposes of
+educational review and portfolio evaluation. All other rights are reserved.
 
-Any unauthorized modification, redistribution, or commercial exploitation of this project, in whole or in part, is strictly prohibited without the express written consent of the copyright holder.
+Any modification, redistribution, or commercial exploitation of the Project,
+in whole or in part, is strictly prohibited without the express written
+consent of the copyright holder.
 
-Disclaimer:
-This firmware/hardware is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the firmware/hardware or the use or other dealings in the firmware/hardware.
+THE PROJECT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+FROM, OUT OF, OR IN CONNECTION WITH THE PROJECT OR THE USE OR OTHER DEALINGS
+IN THE PROJECT.

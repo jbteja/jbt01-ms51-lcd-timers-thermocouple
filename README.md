@@ -11,7 +11,7 @@
 
 ## 🚀 Overview
 
-A freelance heater controller project built around the Nuvoton MS51FB9AE. It delivers deterministic operation, safety auto-cutoff, preset timer modes, and temperature measurement using a K‑type thermocouple rated above 750°C.
+A freelance heater controller project built around the **Nuvoton MS51FB9AE**. It delivers deterministic operation, safety auto-cutoff, preset timer modes, and temperature measurement using a K‑type thermocouple rated above 750°C.
 
 The custom PCB includes a 16×2 LCD, MAX6675 thermocouple interface, a few switches, and a relay for heater control. The design prioritizes temperature safety and reliable performance in a demanding environment.
 
